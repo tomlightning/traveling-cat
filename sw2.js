@@ -1,6 +1,6 @@
 var GHPATH = "/traveling-cat";
 var APP_PREFIX = "cat_game_";
-var VERSION = "version_002";
+var VERSION = "version_005";
 var URLS = [
   `${GHPATH}/index.html`,
   `${GHPATH}/css/styles.css`,

@@ -1,20 +1,10 @@
 var GHPATH = "/traveling-cat";
 var APP_PREFIX = "cat_game_";
-var VERSION = "version_001";
+var VERSION = "version_002";
 var URLS = [
-  `${GHPATH}/`,
   `${GHPATH}/index.html`,
   `${GHPATH}/css/styles.css`,
   `${GHPATH}/img/icon.jpg`,
-  `${GHPATH}/media/accordion.mp3`,
-  `${GHPATH}/media/contrabass.mp3`,
-  `${GHPATH}/media/cymbal.mp3`,
-  `${GHPATH}/media/drums.mp3`,
-  `${GHPATH}/media/flute.mp3`,
-  `${GHPATH}/media/guitar.mp3`,
-  `${GHPATH}/media/piano.mp3`,
-  `${GHPATH}/media/trumpet.mp3`,
-  `${GHPATH}/media/violin.mp3`,
 ];
 
 var CACHE_NAME = APP_PREFIX + VERSION;

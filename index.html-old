@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>תזמורת מפלצות הקצב</title>
+  <link rel="canonical" href="https://tomlightning.github.io/kid-musical-instruments/" />
+  <link rel="manifest" href="/kid-musical-instruments/manifest.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <audio id="accordion" src="media/accordion.mp3"></audio>
+  <audio id="contrabass" src="media/contrabass.mp3"></audio>
+  <audio id="cymbal" src="media/cymbal.mp3"></audio>
+  <audio id="drums" src="media/drums.mp3"></audio>
+  <audio id="flute" src="media/flute.mp3"></audio>
+  <audio id="guitar" src="media/guitar.mp3"></audio>
+  <audio id="piano" src="media/piano.mp3"></audio>
+  <audio id="trumpet" src="media/trumpet.mp3"></audio>
+  <audio id="violin" src="media/violin.mp3"></audio>
+
+
+  <h1>תזמורת מפלצות הקצב</h1>
+  <p>
+
+    <button onclick="playSound('guitar');">גטרה</button><br /><br />
+    <button onclick="playSound('drums');">תוף</button><br /><br />
+    <button onclick="playSound('piano');">פסנתר</button><br /><br />
+    <button onclick="playSound('trumpet');">חצוצרה</button><br /><br />
+    <button onclick="playSound('violin');">כינור</button><br /><br />
+    <button onclick="playSound('cymbal');">מצילתיים</button><br /><br />
+    <button onclick="playSound('accordion');">אקורדיון</button><br /><br />
+    <button onclick="playSound('flute');">חליל</button><br /><br />
+    <button onclick="playSound('contrabass');">קונטרה בס</button><br /><br />
+  </p>
+
+  <script>
+
+var isPlaying = false;
+function playSound(type){
+  if(isPlaying){
+    var audio = document.getElementById(isPlaying);
+    audio.pause();
+  }
+  if (isPlaying == type) {
+    isPlaying = false;
+  } else {
+
+    isPlaying = type;
+    var audio = document.getElementById(type);
+    audio.play();
+    audio.onended = function() {
+      isPlaying = false;
+    }
+  
+  }
+
+}
+
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/kid-musical-instruments/sw.js',
+          {scope: '/kid-musical-instruments/'}
+        )
+      }
+  </script>
+</body>
+</html>

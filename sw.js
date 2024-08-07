@@ -1,6 +1,6 @@
 var GHPATH = "/traveling-cat";
-var APP_PREFIX = "music_instru_";
-var VERSION = "version_004";
+var APP_PREFIX = "cat_game_";
+var VERSION = "version_001";
 var URLS = [
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
